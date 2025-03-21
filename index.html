@@ -4,10 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML 5 Boilerplate</title>
+    <title>Pokémon Search App</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="className.css" />
+
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+    </style>
   </head>
   <body>
+    <h1>
+      <span class="title-span">P</span>okémon Search
+      <span class="title-span-b">A</span>pp
+    </h1>
+
+    <div class="search-container">
+      <h2>Search Pokémon by Name or ID:</h2>
+      <input id="search-input" />
+      <button id="search-button"></button>
+    </div>
+
+    <div class="pokedex-container">
+      <div class="info-stack">
+        <div id="pokemon-name">1</div>
+        <div id="pokemon-id">2</div>
+        <div id="weight">3</div>
+        <div id="height">4</div>
+        <!--  -->
+        <div id="types">5</div>
+        <!--  -->
+      </div>
+
+      <div class="stats-stack">
+        <div id="hp">1</div>
+        <div id="attack">2</div>
+        <div id="defense">3</div>
+        <div id="special-attack">4</div>
+        <div id="special-defence">5</div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

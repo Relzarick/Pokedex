@@ -1,0 +1,50 @@
+.search-container {
+  display: flex;
+
+  justify-content: center;
+  margin: 0 auto;
+}
+.title-span {
+  font-size: var(--titleSize);
+  letter-spacing: 2px;
+}
+.title-span-b {
+  font-size: var(--titleSize);
+  letter-spacing: 26px;
+}
+
+.pokedex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: clamp(3rem, 20vh, 5rem) auto 0;
+  position: relative;
+
+  background-color: lightblue;
+  width: 800px;
+  height: 600px;
+}
+
+.info-stack {
+  border-top-left-radius: var(--pokeRadius);
+  border-bottom-left-radius: var(--pokeRadius);
+  /* border: solid 2px black; */
+
+  background-color: var(--pokeRed);
+  height: inherit;
+  width: 400px;
+}
+
+.stats-stack {
+  width: 400px;
+  height: 520px;
+  margin-top: 80px;
+
+  /* border: solid 2px black; */
+
+  background-color: var(--pokeRed);
+  /* clip-path: path(
+    "M 0,0 L 0,170 L 10,150 L 30,200 L 30,400 L 400,400 L 400,0 L 0,0 Z"
+  ); */
+}
+/*t bruh what am i doing*/

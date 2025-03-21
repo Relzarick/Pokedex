@@ -1,0 +1,37 @@
+:root {
+  --background: #faf9f6;
+  --pokeRed: #ce0404;
+  --pokeBlue: #0073ff;
+  --pokeBlack: #000000;
+  --pokeRadius: 1.7rem;
+  --titleSize: clamp(4rem, 15vw, 8rem);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+body {
+  background-color: var(--background);
+  margin: clamp(5rem, 20vh, 8rem) 0 0;
+}
+h1 {
+  font-family: "Pokemon Solid";
+  font-size: var(--titleSize);
+  text-align: center;
+  color: #ffcc00;
+
+  -webkit-text-stroke: 2px #003a70;
+  letter-spacing: 12px;
+}
+h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+}
+input {
+  height: 2.5rem;
+  width: 15rem;
+}
+button {
+  height: 2.5rem;
+  width: 3rem;
+}
