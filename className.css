@@ -1,8 +1,36 @@
 .search-container {
   display: flex;
-
+  flex-direction: row;
+  position: relative;
   justify-content: center;
-  margin: 0 auto;
+  margin: 8rem auto 2rem;
+
+  width: 400px;
+  height: fit-content;
+}
+.search-container p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: var(--background);
+
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  padding: 0 5px;
+}
+#search-button {
+  width: fit-content;
+  height: 3.9rem;
+  border: var(--searchBorder);
+  border-radius: 3px;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 0 1rem;
+  padding: 0.5rem;
+  background-color: var(--background);
+
+  cursor: pointer;
 }
 .title-span {
   font-size: var(--titleSize);
@@ -20,7 +48,7 @@
   margin: clamp(3rem, 20vh, 5rem) auto 0;
   position: relative;
 
-  background-color: lightblue;
+  /* background-color: lightblue; */
   width: 800px;
   height: 600px;
 }
@@ -37,14 +65,14 @@
 
 .stats-stack {
   width: 400px;
-  height: 520px;
-  margin-top: 80px;
+  height: 550px;
+  margin-top: 50px;
 
   /* border: solid 2px black; */
 
   background-color: var(--pokeRed);
-  /* clip-path: path(
-    "M 0,0 L 0,170 L 10,150 L 30,200 L 30,400 L 400,400 L 400,0 L 0,0 Z"
-  ); */
+  clip-path: path(
+    "M 0,0 L 103,0 C 130,0 160,0 173,15 C 190,35 210,45 250,45 L 400,45 L 400,530 A 20,20 0,0,1 380,550 L 0,550 L 0,0 Z"
+  );
 }
-/*t bruh what am i doing*/
+/*t Use Cubic Bézier curves less of a headache */
