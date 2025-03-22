@@ -1,13 +1,17 @@
 :root {
   --background: #faf9f6;
   --pokeRed: #c00d0d;
+  --pokeRed2: #fb0505;
   --pokeBlue: #0073ff;
   --pokeBlack: #000000;
-  --pokeRadius: 1.7rem;
+  --pokeGrey: #b0b0b0;
+  --pokeGreen: #50fb05;
+  --pokeRadius: 16px;
   --titleSize: clamp(4rem, 15vw, 8rem);
   --searchBorder: 2px solid var(--pokeBlack);
   --subCircle: 25px;
   --subCircleMargins: 1rem 0.5rem 0;
+  --btnPx: 69px;
 }
 * {
   margin: 0;
