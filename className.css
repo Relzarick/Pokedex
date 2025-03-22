@@ -48,31 +48,101 @@
   margin: clamp(3rem, 20vh, 5rem) auto 0;
   position: relative;
 
-  /* background-color: lightblue; */
   width: 800px;
   height: 600px;
 }
 
+/*? Use Cubic Bézier curves less of a headache phone gallery has the points */
+
+/*! CIRCLE HELL  */
+#buttons-container {
+  background-color: #8b0000;
+  height: 95px;
+  width: 400px;
+  clip-path: path(
+    "M 400,50 L 297,50 C 270,50 240,50 227,65 C 210,85 190,95 150,95 L 0,95 L 0,20 A 17,17 0,0,1 20,0 L 400,0 L 400,50 Z"
+  );
+  display: flex;
+  flex-direction: row;
+}
+
+#circle-1 {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: var(--pokeBlue);
+  margin: 0.9rem 1rem;
+}
+#circle-2 {
+  height: var(--subCircle);
+  width: var(--subCircle);
+  border-radius: 50%;
+  background-color: red;
+  margin: var(--subCircleMargins);
+}
+#circle-3 {
+  height: var(--subCircle);
+  width: var(--subCircle);
+  border-radius: 50%;
+  background-color: yellow;
+  margin: var(--subCircleMargins);
+}
+#circle-4 {
+  height: var(--subCircle);
+  width: var(--subCircle);
+  border-radius: 50%;
+  background-color: greenyellow;
+  margin: var(--subCircleMargins);
+}
+
+/*! LEFT SIDE */
 .info-stack {
   border-top-left-radius: var(--pokeRadius);
   border-bottom-left-radius: var(--pokeRadius);
-  /* border: solid 2px black; */
-
   background-color: var(--pokeRed);
-  height: inherit;
+  height: 600px;
   width: 400px;
+
+  display: flex;
+  flex-direction: column;
+}
+.pokemon-display {
+  width: 350px;
+  height: 300px;
+  background-color: #a0a0a0;
+  margin: 2.5rem auto 0;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+.pokemon-info {
+  display: flex;
+  flex-direction: row;
+}
+.pokemon-info-p {
+  font-size: 2rem;
+  padding: 0.5rem 1rem 0;
 }
 
+/*! RIGHT SIDE  */
 .stats-stack {
   width: 400px;
   height: 550px;
   margin-top: 50px;
-
-  /* border: solid 2px black; */
 
   background-color: var(--pokeRed);
   clip-path: path(
     "M 0,0 L 103,0 C 130,0 160,0 173,15 C 190,35 210,45 250,45 L 400,45 L 400,530 A 20,20 0,0,1 380,550 L 0,550 L 0,0 Z"
   );
 }
-/*t Use Cubic Bézier curves less of a headache */
+.stats-display {
+  width: 350px;
+  height: 150px;
+  background-color: black;
+  margin: 75px auto 0;
+  color: white;
+  font-size: 2rem;
+  border-radius: 15px;
+}

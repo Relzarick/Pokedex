@@ -6,6 +6,8 @@
   --pokeRadius: 1.7rem;
   --titleSize: clamp(4rem, 15vw, 8rem);
   --searchBorder: 2px solid var(--pokeBlack);
+  --subCircle: 25px;
+  --subCircleMargins: 1rem 0.5rem 0;
 }
 * {
   margin: 0;
