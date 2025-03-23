@@ -95,10 +95,10 @@ const renderValues = async (url) => {
 
   const statOrder = [
     "hp",
-    "attack",
-    "defense",
     "speed",
+    "attack",
     "special-attack",
+    "defense",
     "special-defense",
   ];
 
@@ -111,6 +111,7 @@ const renderValues = async (url) => {
     "special-defense": "Sp. Defense:",
   };
 
+  pokeStats.innerHTML = "";
   //* Add two because display 2 stats per loop
   for (let i = 0; i < 6; i += 2) {
     const statsName1 = statOrder[i];
