@@ -21,7 +21,7 @@
 
     <form class="search-container">
       <p>Search for Pokémon by Name or ID:</p>
-      <input id="search-input" />
+      <input id="search-input" required />
       <button id="search-button" type="submit">Search</button>
     </form>
 
@@ -37,20 +37,7 @@
         </div>
 
         <div class="pokemon-display-container">
-          <div class="pokemon-display">
-            <div class="pokemon-info">
-              <p id="pokemon-name" class="pokemon-info-p">BULBASAUR</p>
-              <p id="pokemon-id" class="pokemon-info-p">#1</p>
-            </div>
-
-            <div class="pokemon-info">
-              <p id="weight" class="pokemon-info-p">45</p>
-              <p id="height" class="pokemon-info-p">7</p>
-            </div>
-
-            <div id="sprite"></div>
-            <div id="types">fire</div>
-          </div>
+          <div class="pokemon-display"></div>
         </div>
 
         <div class="different-btns-container">
@@ -71,20 +58,7 @@
       </div>
 
       <div class="stats-stack">
-        <table class="stats-display">
-          <tr>
-            <td id="hp">HP:</td>
-            <td id="speed">Speed:</td>
-          </tr>
-          <tr>
-            <td id="attack">Attack:</td>
-            <td id="special-attack">Sp. Attack</td>
-          </tr>
-          <tr>
-            <td id="defense">Defense:</td>
-            <td id="special-defence">Sp. Defense</td>
-          </tr>
-        </table>
+        <table class="stats-display"></table>
 
         <div class="blue-btn-container"></div>
 

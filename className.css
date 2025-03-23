@@ -52,57 +52,6 @@
   height: 600px;
 }
 
-/*? Use Cubic Bézier curves less of a headache. Check gallery for the cords*/
-
-/*! CIRCLE HELL  */
-#buttons-container {
-  background-color: #8b0000;
-  height: 95px;
-  width: 400px;
-  clip-path: path(
-    "M 400,50 L 297,50 C 270,50 240,50 227,65 C 210,85 190,95 150,95 L 0,95 L 0,20 A 17,17 0,0,1 20,0 L 400,0 L 400,50 Z"
-  );
-  display: flex;
-  flex-direction: row;
-}
-
-#circle-1 {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  border: 5px solid white;
-  background-color: var(--pokeBlue);
-  margin: 0.9rem 1rem;
-}
-#circle-2 {
-  height: var(--subCircle);
-  width: var(--subCircle);
-  border-radius: 50%;
-  background-color: var(--pokeRed2);
-  margin: var(--subCircleMargins);
-}
-.circle-3 {
-  height: var(--subCircle);
-  width: var(--subCircle);
-  border-radius: 50%;
-  background-color: #fbfb05;
-  margin: var(--subCircleMargins);
-}
-#circle-4 {
-  height: var(--subCircle);
-  width: var(--subCircle);
-  border-radius: 50%;
-  background-color: var(--pokeGreen);
-  margin: var(--subCircleMargins);
-}
-.circle-5 {
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-  background-color: var(--pokeBlack);
-  margin: 40px 0 0 10px;
-}
-
 /*! LEFT SIDE */
 .info-stack {
   border-top-left-radius: var(--pokeRadius);
@@ -139,29 +88,25 @@
 
 /* t POKEMON INFO */
 #sprite {
-  margin: 15px auto 0;
-  width: 125px;
-  height: 125px;
-  background-color: brown;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
 }
 #types {
-  border-radius: var(--pokeRadius);
-  font-size: 2rem;
   text-align: center;
-  padding: 1rem;
-
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .pokemon-info {
   display: flex;
   flex-direction: row;
-  margin: 1rem 0 0 1rem;
+  margin: 5px 0 0 10px;
 }
 .pokemon-info-p {
   font-size: 2rem;
+  margin: 0 0 0 15px;
 }
 
 /*! RIGHT SIDE  */
@@ -289,4 +234,111 @@
     35% 65%,
     0% 65%
   );
+}
+
+/*? Use Cubic Bézier curves less of a headache. Check gallery for the cords*/
+
+/*! CIRCLE HELL  */
+#buttons-container {
+  background-color: #8b0000;
+  height: 95px;
+  width: 400px;
+  clip-path: path(
+    "M 400,50 L 297,50 C 270,50 240,50 227,65 C 210,85 190,95 150,95 L 0,95 L 0,20 A 17,17 0,0,1 20,0 L 400,0 L 400,50 Z"
+  );
+  display: flex;
+  flex-direction: row;
+}
+
+#circle-1 {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: var(--pokeBlue);
+  margin: 0.9rem 1rem;
+}
+#circle-2 {
+  height: var(--subCircle);
+  width: var(--subCircle);
+  border-radius: 50%;
+  background-color: var(--pokeRed2);
+  margin: var(--subCircleMargins);
+}
+.circle-3 {
+  height: var(--subCircle);
+  width: var(--subCircle);
+  border-radius: 50%;
+  background-color: #fbfb05;
+  margin: var(--subCircleMargins);
+}
+#circle-4 {
+  height: var(--subCircle);
+  width: var(--subCircle);
+  border-radius: 50%;
+  background-color: var(--pokeGreen);
+  margin: var(--subCircleMargins);
+}
+.circle-5 {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background-color: var(--pokeBlack);
+  margin: 40px 0 0 10px;
+}
+
+/* ! TYPE HELL  */
+#normal {
+  background-color: #a8a77a;
+}
+#fire {
+  background-color: #ee8130;
+}
+#water {
+  background-color: #6390f0;
+}
+#electric {
+  background-color: #f7d02c;
+}
+#grass {
+  background-color: #7ac74c;
+}
+#ice {
+  background-color: #96d9d6;
+}
+#fighting {
+  background-color: #c22e28;
+}
+#poison {
+  background-color: #a33ea1;
+}
+#ground {
+  background-color: #e2bf65;
+}
+#flying {
+  background-color: #a98ff3;
+}
+#psychic {
+  background-color: #f95587;
+}
+#bug {
+  background-color: #a6b91a;
+}
+#rock {
+  background-color: #b6a136;
+}
+#ghost {
+  background-color: #735797;
+}
+#dragon {
+  background-color: #6f35fc;
+}
+#dark {
+  background-color: #705746;
+}
+#steel {
+  background-color: #b7b7ce;
+}
+#fairy {
+  background-color: #d685ad;
 }
