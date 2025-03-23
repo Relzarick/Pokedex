@@ -40,7 +40,7 @@ const fetchData = async (input) => {
 };
 
 // fetchData("mamoswine");
-fetchData("pikachu");
+// fetchData("pikachu");
 
 const pokeData = (data, input) => {
   const { results } = data;
