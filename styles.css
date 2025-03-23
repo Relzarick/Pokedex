@@ -54,3 +54,7 @@ input {
   border-radius: 3px;
   background-color: var(--background);
 }
+td {
+  font-size: 2rem;
+  padding: 0 0 0 1rem;
+}

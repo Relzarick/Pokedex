@@ -12,17 +12,18 @@
       @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
     </style>
   </head>
+
   <body>
     <h1>
       <span class="title-span">P</span>okémon Search
       <span class="title-span-b">A</span>pp
     </h1>
 
-    <div class="search-container">
+    <form class="search-container">
       <p>Search for Pokémon by Name or ID:</p>
       <input id="search-input" />
-      <button id="search-button">Search</button>
-    </div>
+      <button id="search-button" type="submit">Search</button>
+    </form>
 
     <!--t all info should be filled using js when user inputs something for now use placeholder for styling -->
     <div class="pokedex-container">
@@ -35,18 +36,21 @@
           <div id="circle-4"></div>
         </div>
 
-        <div class="pokemon-display">
-          <div class="pokemon-info">
-            <p id="pokemon-name" class="pokemon-info-p">BULBASAUR</p>
-            <p id="pokemon-id" class="pokemon-info-p">#1</p>
-          </div>
-          <div class="pokemon-info">
-            <p id="weight" class="pokemon-info-p">45</p>
-            <p id="height" class="pokemon-info-p">7</p>
-          </div>
+        <div class="pokemon-display-container">
+          <div class="pokemon-display">
+            <div class="pokemon-info">
+              <p id="pokemon-name" class="pokemon-info-p">BULBASAUR</p>
+              <p id="pokemon-id" class="pokemon-info-p">#1</p>
+            </div>
 
-          <div id="sprite"></div>
-          <div id="types">nig</div>
+            <div class="pokemon-info">
+              <p id="weight" class="pokemon-info-p">45</p>
+              <p id="height" class="pokemon-info-p">7</p>
+            </div>
+
+            <div id="sprite"></div>
+            <div id="types">fire</div>
+          </div>
         </div>
 
         <div class="different-btns-container">
@@ -67,14 +71,20 @@
       </div>
 
       <div class="stats-stack">
-        <div class="stats-display">
-          <!--t explore using tr and td -->
-          <p id="hp" class="pokemon-info-p">1</p>
-          <p id="attack" class="pokemon-info-p">2</p>
-          <p id="defense" class="pokemon-info-p">3</p>
-          <p id="special-attack" class="pokemon-info-p">4</p>
-          <p id="special-defence" class="pokemon-info-p">5</p>
-        </div>
+        <table class="stats-display">
+          <tr>
+            <td id="hp">HP:</td>
+            <td id="speed">Speed:</td>
+          </tr>
+          <tr>
+            <td id="attack">Attack:</td>
+            <td id="special-attack">Sp. Attack</td>
+          </tr>
+          <tr>
+            <td id="defense">Defense:</td>
+            <td id="special-defence">Sp. Defense</td>
+          </tr>
+        </table>
 
         <div class="blue-btn-container"></div>
 

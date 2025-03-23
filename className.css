@@ -52,7 +52,7 @@
   height: 600px;
 }
 
-/*? Use Cubic Bézier curves less of a headache phone gallery has the points */
+/*? Use Cubic Bézier curves less of a headache. Check gallery for the cords*/
 
 /*! CIRCLE HELL  */
 #buttons-container {
@@ -114,7 +114,7 @@
   display: flex;
   flex-direction: column;
 }
-.pokemon-display {
+.pokemon-display-container {
   width: 350px;
   height: 300px;
   background-color: var(--pokeGrey);
@@ -127,13 +127,41 @@
   display: flex;
   flex-direction: column;
 }
+.pokemon-display {
+  border: 2px solid var(--pokeBlack);
+  border-radius: var(--pokeRadius);
+  background-color: var(--background);
+  margin: auto;
+  height: 250px;
+  width: 290px;
+  position: relative;
+}
+
+/* t POKEMON INFO */
+#sprite {
+  margin: 15px auto 0;
+  width: 125px;
+  height: 125px;
+  background-color: brown;
+}
+#types {
+  border-radius: var(--pokeRadius);
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
 .pokemon-info {
   display: flex;
   flex-direction: row;
+  margin: 1rem 0 0 1rem;
 }
 .pokemon-info-p {
   font-size: 2rem;
-  padding: 0.5rem 1rem 0;
 }
 
 /*! RIGHT SIDE  */
@@ -227,7 +255,7 @@
 }
 .top {
   display: flex;
-  margin: 15px 0 60px;
+  margin: 15px 0 40px;
 }
 .green {
   background-color: var(--pokeGreen);
@@ -237,7 +265,7 @@
 }
 .green-display {
   width: calc(var(--btnPx) + 50px);
-  height: calc(var(--btnPx) - 10px);
+  height: var(--btnPx);
   background-color: #32cd32;
   border: 2px solid var(--pokeBlack);
   border-radius: 5px;
