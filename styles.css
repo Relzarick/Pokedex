@@ -7,7 +7,7 @@
   --pokeGrey: #b0b0b0;
   --pokeGreen: #50fb05;
   --pokeRadius: 16px;
-  --titleSize: clamp(4rem, 15vw, 8rem);
+  --titleSize: clamp(5rem, 10vw, 7rem);
   --searchBorder: 2px solid var(--pokeBlack);
   --subCircle: 25px;
   --subCircleMargins: 1rem 0.5rem 0;
@@ -18,9 +18,10 @@
   padding: 0;
   font-size: 10px;
 }
-body {
+body,
+html {
   background-color: var(--background);
-  margin: clamp(5rem, 20vh, 8rem) 0 0;
+  margin: clamp(5rem, 20vh, 6rem) 0 0;
 }
 h1 {
   font-family: "Pokemon Solid";
@@ -30,7 +31,7 @@ h1 {
 
   -webkit-text-stroke: 2px #003a70;
   letter-spacing: 14px;
-  line-height: 12rem;
+  line-height: 1.1;
 }
 h2 {
   font-size: clamp(2rem, 10vw, 3rem);
@@ -63,4 +64,12 @@ span {
   padding: 1rem;
   margin: 0 1rem;
   border-radius: 6px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body,
+  html {
+    overflow-y: auto;
+    height: 100vh;
+  }
 }
