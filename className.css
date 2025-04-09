@@ -14,8 +14,8 @@
   background-color: var(--background);
 
   position: absolute;
-  top: -8px;
-  left: 20px;
+  top: -10px;
+  left: 12px;
   padding: 0 5px;
 }
 #search-button {
@@ -341,4 +341,10 @@
 }
 #fairy {
   background-color: #d685ad;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin: 10px 0 0;
+  }
 }
